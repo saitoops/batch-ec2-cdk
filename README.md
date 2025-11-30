@@ -8,7 +8,7 @@ AWS CDKを使用したAWS Batchの定期実行インフラストラクチャー
 
 ## アーキテクチャ
 
-![AWS Architecture](architecture.drawio.png)
+![AWS Architecture](docs/architecture.drawio.png)
 
 - **VPC**: プライベートサブネットとパブリックサブネットを含むVPC
 - **ECR**: Dockerイメージを保存するためのリポジトリ
