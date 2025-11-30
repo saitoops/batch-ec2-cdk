@@ -1,0 +1,32 @@
+{
+  "name": "batch-ec2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "cdk": "cdk",
+    "cdk:synth": "cdk synth",
+    "cdk:diff": "cdk diff",
+    "cdk:deploy": "cdk deploy --all",
+    "cdk:vpc": "cdk deploy BatchEc2VpcStack",
+    "cdk:ecr": "cdk deploy BatchEc2EcrStack",
+    "cdk:batch": "cdk deploy BatchEc2BatchStack",
+    "cdk:eventbridge": "cdk deploy BatchEc2EventBridgeStack",
+    "cdk:destroy": "cdk destroy --all"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-cdk-lib": "^2.230.0",
+    "constructs": "^10.4.3",
+    "dotenv": "^17.2.3",
+    "source-map-support": "^0.5.21"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
